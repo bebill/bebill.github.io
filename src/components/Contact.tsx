@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import emailjs from "emailjs-com"; // Import EmailJS
+import emailjs from "emailjs-com";
 import Background from "./Background";
 
 const ContactWrapper = styled.section`
@@ -10,7 +10,7 @@ const ContactWrapper = styled.section`
 
 const ContactTitle = styled.h2`
   font-size: 3rem;
-  color: #9b773d; // Light color
+  color: #9b773d;
   margin-bottom: 2rem;
 `;
 
@@ -33,8 +33,8 @@ const Input = styled.input`
   border-radius: 4px;
   border: 1px solid #ddd;
   font-size: 1rem;
-  background-color: #444243; // Dark input background
-  color: #fffbeb; // Light text color
+  background-color: #444243;
+  color: #fffbeb;
 `;
 
 const Textarea = styled.textarea`
@@ -44,12 +44,12 @@ const Textarea = styled.textarea`
   border: 1px solid #ddd;
   font-size: 1rem;
   resize: vertical;
-  background-color: #444243; // Dark input background
-  color: #fffbeb; // Light text color
+  background-color: #444243;
+  color: #fffbeb;
 `;
 
 const SubmitButton = styled.button`
-  background-color: #9b773d; // Light button color
+  background-color: #9b773d;
   padding: 1rem 2rem;
   color: #fffbeb;
   font-size: 1.2rem;
@@ -57,7 +57,7 @@ const SubmitButton = styled.button`
   cursor: pointer;
 
   &:hover {
-    background-color: #7b622c; // Darker button on hover
+    background-color: #7b622c;
   }
 `;
 
@@ -89,10 +89,10 @@ const Contact: React.FC = () => {
     // Send email using EmailJS
     emailjs
       .send(
-        "service_7dck6s1", // Your Service ID
-        "template_97vecjg", // Your Template ID
-        templateParams, // Mapped data to template params
-        "PkZH1zOUEDms6PRoR" // Your Public Key (User ID)
+        "service_7dck6s1",
+        "template_97vecjg",
+        templateParams,
+        "PkZH1zOUEDms6PRoR"
       )
       .then((response) => {
         console.log("SUCCESS!", response.status, response.text);
@@ -103,7 +103,6 @@ const Contact: React.FC = () => {
         alert("Failed to send message. Please try again later.");
       });
 
-    // Reset form fields after submission
     setFormData({
       name: "",
       email: "",

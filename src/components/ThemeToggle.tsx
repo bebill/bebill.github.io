@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 
 const ToggleButton = styled.button`
-  background-color: #9b773d; /* Couleur du bouton */
+  background-color: #9b773d;
   color: #fff;
   padding: 0.75rem 1.5rem;
   border: none;
@@ -11,7 +11,7 @@ const ToggleButton = styled.button`
   transition: background-color 0.3s ease;
 
   &:hover {
-    background-color: #615545; /* Couleur au survol */
+    background-color: #615545;
   }
 `;
 

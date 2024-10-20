@@ -9,8 +9,8 @@ const BackgroundWrapper = styled.div`
   bottom: 0;
   background-image: url("/wallpaper.webp");
   background-size: cover;
-  opacity: 0.08; /* Set opacity to 10% */
-  z-index: -1; /* Ensure it's behind other content */
+  opacity: 0.08;
+  z-index: -1;
 `;
 
 const Background = () => {

@@ -10,7 +10,7 @@ const ProjectDetailsWrapper = styled.section`
 
 const ProjectTitle = styled.h2`
   font-size: 3rem;
-  color: #9b773d; // Light color
+  color: #9b773d;
   margin-bottom: 2rem;
 `;
 
@@ -23,7 +23,7 @@ const ProjectImage = styled.img`
 
 const ProjectDescription = styled.p`
   font-size: 1.2rem;
-  color: #646263; // Lighter text
+  color: #646263;
   line-height: 1.8;
   text-align: justify;
 `;
@@ -74,8 +74,8 @@ const ProjectDetails: React.FC = () => {
       demo: "https://bebill.github.io/Openclassrooms-P2_Booki/",
     },
     "2": {
-      title: "Ohmyfood: Dynamic Webpage with CSS Animations",
-      image: "/ohmyfood.png", // Add the relevant image for the project
+      title: "Ohmyfood: Dynamic Webpage for a Food Service",
+      image: "/ohmyfood.png",
       description: `
         In this project, I worked on creating a dynamic and interactive web page for a start-up named Ohmyfood. The project involved building the site using a mobile-first approach and implementing CSS animations to improve user engagement.
 
@@ -87,8 +87,8 @@ const ProjectDetails: React.FC = () => {
       demo: "https://bebill.github.io/Openclassrooms-P3_OhMyFood/",
     },
     "3": {
-      title: "GameOn: Create a Landing Page with JavaScript",
-      image: "/gameon.png", // Add the relevant image for the project
+      title: "GameOn: The Next Gamers Assembly Landing Page",
+      image: "/gameon.png",
       description: `
           This project was an introduction to JavaScript, where I developed a landing page for GameOn, a company that organizes game competitions. 
   
@@ -103,7 +103,7 @@ const ProjectDetails: React.FC = () => {
     },
     "4": {
       title: "FishEye: Accessible Photography Platform",
-      image: "/fisheye.png", // Add the relevant image for the project
+      image: "/fisheye.png",
       description: `
           In this project, I developed a web platform for FishEye, a site that allows independent photographers to showcase their work. The focus was on accessibility, modular design, and JavaScript design patterns.
   
@@ -115,8 +115,8 @@ const ProjectDetails: React.FC = () => {
       demo: "https://bebill.github.io/Openclassrooms-P6_Fisheye/",
     },
     "5": {
-      title: "Les petits plats: Efficient Search Algorithm Development",
-      image: "/petitsplats.png", // Add the relevant image for the project
+      title: "Les Petits Plats: Efficient Search Algorithm For Recipes",
+      image: "/petitsplats.png",
       description: `
     In this project, I developed an efficient search algorithm for a cooking recipe platform named "Les petits plats." 
 
@@ -133,7 +133,7 @@ const ProjectDetails: React.FC = () => {
     },
     "6": {
       title: "Billed: Debugging and Testing a SaaS HR Application",
-      image: "/billed.png", // Add the relevant image for the project
+      image: "/billed.png",
       description: `
       In this project, I was tasked with debugging and testing a Human Resources SaaS application for a company called Billed. 
 
@@ -161,12 +161,12 @@ const ProjectDetails: React.FC = () => {
       This project emphasized the importance of identifying client needs, modeling technical solutions, and contributing effectively using an agile methodology. Skills in UX/UI design and project management tools like Kanban will enhance my collaboration and communication capabilities within teams and with clients.
     `,
       github:
-        "https://www.canva.com/design/DAF0uixHr7M/cfx9ccoXMijeYuvIh1oTMw/view?utm_content=DAF0uixHr7M&utm_campaign=designshare&utm_medium=link&utm_source=editor", // Replace with the actual GitHub link if available
-      demo: "https://www.figma.com/proto/0fusUZuPdG65Jo4MF8QyYT/Learn%40Home?type=design&node-id=20-44&t=2FShrxeX53al3zR8-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=20%3A44", // Replace with the actual demo link if available
+        "https://www.canva.com/design/DAF0uixHr7M/cfx9ccoXMijeYuvIh1oTMw/view?utm_content=DAF0uixHr7M&utm_campaign=designshare&utm_medium=link&utm_source=editor",
+      demo: "https://www.figma.com/proto/0fusUZuPdG65Jo4MF8QyYT/Learn%40Home?type=design&node-id=20-44&t=2FShrxeX53al3zR8-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=20%3A44",
     },
     "8": {
-      title: "Kasa: Web Application Development with React and React Router",
-      image: "/kasa.png", // Add the relevant image for the project
+      title: "Kasa: Location Services Homepage",
+      image: "/kasa.png",
       description: `
         In this project, I developed a web application for Kasa, a company specializing in apartment rentals. The objective was to create a modern and responsive front-end using React and React Router, ensuring a seamless user experience. I used TypeScript to enhance the development process, ensuring type safety and better code maintainability.
 
@@ -181,7 +181,7 @@ const ProjectDetails: React.FC = () => {
     },
     "9": {
       title: "SportSee: Analytics Dashboard Development",
-      image: "/sportsee.png", // Add the relevant image for the project
+      image: "/sportsee.png",
       description: ` 
     In this project, I developed an analytics dashboard for SportSee, a startup dedicated to sports coaching. The main focus was on integrating charts and diagrams using React and Typescript to present user activity data effectively.
 
@@ -196,7 +196,7 @@ const ProjectDetails: React.FC = () => {
     },
     "10": {
       title: "Argent Bank: Banking User Account with API Integration",
-      image: "/argentbank.png", // Add the relevant image for the project
+      image: "/argentbank.png",
       description: ` 
       In this project, I developed the front-end of a banking application called Argent Bank using React, Typescript, and Redux to create a dynamic and responsive user experience.
 
@@ -213,7 +213,7 @@ const ProjectDetails: React.FC = () => {
     },
     "11": {
       title: "HRnet: Migration from jQuery to React",
-      image: "/wealthhealth.png", // Add the relevant image for the project
+      image: "/wealthhealth.png",
       description: `
         In this project, I participated in converting an internal web application from jQuery to React for WealthHealth, a major financial company. My main task was to redesign key pages of the application with atomic design, specifically replacing a jQuery modal plugin with a React component.
 
@@ -225,6 +225,21 @@ const ProjectDetails: React.FC = () => {
     `,
       github: "https://github.com/bebill/Openclassrooms-P14_WealthHealth",
       demo: "https://bebill.github.io/Openclassrooms-P14_WealthHealth/",
+    },
+    "12": {
+      title: "Konkrete: Real Estate on the blockchain",
+      image: "/konkrete.png",
+      description: `
+          In this project, I was responsible of implementing the whole responsive interface of the website for the Konkrete Startup. After doing a competitive analysis and the product backlog, I worked closely with the designer to create the most intuitive dapp for my client.
+          
+          I worked on implementing a global credit marketplace for real estate, using blockchain technology which necessited a good understanding of both web3 and real estate. I developed a dynamic front-end with React and Typescript, focusing on a responsive design and seamless user experience. 
+          
+          I integrated with the back-end to allow investors to deposit USDC, access real estate credit opportunities, and track yields. I also implemented features for borrowers seeking short-term capital for real estate projects. 
+          
+          My work included integrating secure API connections and creating modular, maintainable components to ensure scalability and performance.
+      `,
+      github: "https://app.gitbook.com/s/2rsPZeNwZLDsdzjQqBX2/",
+      demo: "https://app.konkretedao.com/",
     },
   };
 

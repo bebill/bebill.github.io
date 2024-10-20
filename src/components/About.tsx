@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { FaGithub, FaLinkedin } from "react-icons/fa"; // Import icons
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import Background from "./Background";
 import { useNavigate } from "react-router-dom";
 
@@ -20,7 +20,7 @@ const AboutContent = styled.div`
 
 const AboutTitle = styled.h2`
   font-size: 3rem;
-  color: #9b773d; // Light color
+  color: #9b773d;
   margin-bottom: 2rem;
 `;
 
@@ -33,7 +33,7 @@ const Note = styled.p`
 const AboutText = styled.p`
   font-size: 1.2rem;
   line-height: 1.8;
-  color: #646263; // Lighter text
+  color: #646263;
   text-align: justify;
 `;
 
@@ -50,12 +50,12 @@ const SocialLinks = styled.div`
 
 const SocialLink = styled.a`
   margin: 0 1rem;
-  color: #1b435e; // Adjust this color as needed
+  color: #1b435e;
   font-size: 1.5rem;
   transition: color 0.3s;
 
   &:hover {
-    color: #9b773d; // Change color on hover
+    color: #9b773d;
   }
 `;
 
@@ -63,13 +63,13 @@ const CTAButton = styled.button`
   margin-top: 2rem;
   padding: 0.75rem 2rem;
   font-size: 1.5rem;
-  background-color: #9b773d; // Light button color
+  background-color: #9b773d;
   border: none;
   color: #fff;
   cursor: pointer;
 
   &:hover {
-    background-color: #7b622c; // Darker button on hover
+    background-color: #7b622c;
   }
 `;
 

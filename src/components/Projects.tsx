@@ -9,37 +9,37 @@ const ProjectsWrapper = styled.section`
 
 const ProjectMainTitle = styled.h2`
   font-size: 3rem;
-  color: #9b773d; // Light color
+  color: #9b773d;
   margin-bottom: 2rem;
   text-align: center;
 `;
 
 const ProjectCard = styled.div`
-  background-color: #fffbeb; // Couleur de fond pour les cartes de projet
+  background-color: #fffbeb;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   padding: 2rem;
   margin-bottom: 2rem;
   transition: transform 0.3s ease;
-  border-radius: 8px; // Arrondir les bords des cartes
+  border-radius: 8px;
 
   &:hover {
     transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); // Ombre plus marquée au survol
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
   }
 `;
 
 const ProjectTitle = styled.h3`
   font-size: 1.8rem;
-  color: #9b773d; // Couleur du titre correspondant à la palette
+  color: #9b773d;
 `;
 
 const ProjectLink = styled(Link)`
-  color: #615545; // Couleur du lien correspondant à la palette
-  text-decoration: none; // Supprime le soulignement
+  color: #615545;
+  text-decoration: none;
   transition: color 0.3s;
 
   &:hover {
-    color: #444243; // Changement de couleur au survol
+    color: #444243;
   }
 `;
 
@@ -47,7 +47,7 @@ const Projects = () => {
   return (
     <ProjectsWrapper>
       <Background />
-      <ProjectMainTitle>My Projects</ProjectMainTitle>
+      <ProjectMainTitle>Projects I've worked on</ProjectMainTitle>
       <ProjectCard>
         <ProjectTitle>Booki: Travel Agency Homepage</ProjectTitle>
         <p style={{ color: "#9B773D", margin: " 0.5rem 0" }}>
@@ -57,7 +57,7 @@ const Projects = () => {
       </ProjectCard>
       <ProjectCard>
         <ProjectTitle>
-          Ohmyfood: Dynamic Webpage with CSS Animations
+          Ohmyfood: Dynamic Webpage for a Food Service
         </ProjectTitle>
         <p style={{ color: "#9B773D", margin: " 0.5rem 0" }}>
           CSS Animations | SASS | Mobile-First
@@ -66,7 +66,7 @@ const Projects = () => {
       </ProjectCard>
       <ProjectCard>
         <ProjectTitle>
-          GameOn: Create a Landing Page with JavaScript
+          GameOn: The Next Gamers Assembly Landing Page
         </ProjectTitle>
         <p style={{ color: "#9B773D", margin: " 0.5rem 0" }}>
           JavaScript | Form Validation | Event Handling
@@ -82,7 +82,7 @@ const Projects = () => {
       </ProjectCard>
       <ProjectCard>
         <ProjectTitle>
-          Les Petits Plats: Efficient Search Algorithm Development
+          Les Petits Plats: Efficient Search Algorithm For Recipes
         </ProjectTitle>
         <p style={{ color: "#9B773D", margin: " 0.5rem 0" }}>
           JavaScript | Search Algorithm | Green Code Principles
@@ -108,9 +108,7 @@ const Projects = () => {
         <ProjectLink to="/projects/7">See Details</ProjectLink>
       </ProjectCard>
       <ProjectCard>
-        <ProjectTitle>
-          Kasa: Web Application Development with React and React Router
-        </ProjectTitle>
+        <ProjectTitle>Kasa: Location Services Homepage</ProjectTitle>
         <p style={{ color: "#9B773D", margin: " 0.5rem 0" }}>
           React | React Router | Typescript | SASS | CSS Animations
         </p>
@@ -139,6 +137,13 @@ const Projects = () => {
           Documentation
         </p>
         <ProjectLink to="/projects/11">See Details</ProjectLink>
+      </ProjectCard>
+      <ProjectCard>
+        <ProjectTitle>Konkrete: Real Estate on the blockchain </ProjectTitle>
+        <p style={{ color: "#9B773D", margin: " 0.5rem 0" }}>
+          React | Typescript | Node JS | Web3
+        </p>
+        <ProjectLink to="/projects/12">See Details</ProjectLink>
       </ProjectCard>
     </ProjectsWrapper>
   );

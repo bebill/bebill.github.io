@@ -29,12 +29,34 @@ import Background from "./Background";
 const SkillsWrapper = styled.section`
   padding: 4rem 2rem;
   text-align: center;
+
+  @media (min-width: 1440px) {
+    max-width: 90%;
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+
+  @media (max-width: 768px) {
+    padding: 2rem 1rem;
+  }
+
+  @media (max-width: 480px) {
+    padding: 1rem 0.5rem;
+  }
 `;
 
 const SkillsTitle = styled.h2`
   font-size: 3rem;
   color: #9b773d;
   margin-bottom: 2rem;
+
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1.8rem;
+  }
 `;
 
 const SkillsGrid = styled.div`
@@ -44,6 +66,12 @@ const SkillsGrid = styled.div`
 
   @media (max-width: 768px) {
     grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+    gap: 1rem;
   }
 `;
 
@@ -57,21 +85,46 @@ const SkillCard = styled.div`
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
   transition: transform 0.3s ease;
+  animation: fadeIn 3s ease;
 
   &:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
   }
 
+  @media (max-width: 768px) {
+    padding: 1rem;
+  }
+
+  @media (max-width: 480px) {
+    padding: 0.8rem;
+  }
+
   svg {
     font-size: 3rem;
     color: #9b773d;
+
+    @media (max-width: 768px) {
+      font-size: 2.5rem;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 2rem;
+    }
   }
 
   h3 {
     margin-top: 1rem;
     font-size: 1.5rem;
     color: #615545;
+
+    @media (max-width: 768px) {
+      font-size: 1.3rem;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 1.2rem;
+    }
   }
 `;
 

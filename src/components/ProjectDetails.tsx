@@ -6,12 +6,34 @@ import Background from "./Background";
 const ProjectDetailsWrapper = styled.section`
   padding: 4rem 2rem;
   text-align: center;
+
+  @media (min-width: 1440px) {
+    max-width: 90%;
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+
+  @media (max-width: 768px) {
+    padding: 3rem 1.5rem;
+  }
+
+  @media (max-width: 480px) {
+    padding: 2rem 1rem;
+  }
 `;
 
 const ProjectTitle = styled.h2`
   font-size: 3rem;
   color: #9b773d;
   margin-bottom: 2rem;
+
+  @media (max-width: 768px) {
+    font-size: 2.5rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 2rem;
+  }
 `;
 
 const ProjectImage = styled.img`
@@ -26,6 +48,16 @@ const ProjectDescription = styled.p`
   color: #646263;
   line-height: 1.8;
   text-align: justify;
+
+  @media (max-width: 768px) {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
 `;
 
 const ProjectLinks = styled.div`
@@ -33,6 +65,10 @@ const ProjectLinks = styled.div`
   display: flex;
   justify-content: center;
   gap: 1.5rem;
+
+  @media (max-width: 480px) {
+    margin-bottom: 0.5rem;
+  }
 `;
 
 const ProjectLink = styled.a`
@@ -43,6 +79,11 @@ const ProjectLink = styled.a`
 
   &:hover {
     color: #7b622c;
+    text-decoration: underline;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1.2rem;
   }
 `;
 

@@ -9,15 +9,15 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     font-family: 'Poppins', sans-serif;
-    background-color: #121112; /* Couleur de fond sombre */
-    color: #f8f9fa; /* Texte clair */
+    background-color: #121112;
+    color: #f8f9fa;
     overflow-x: hidden;
-    transition: background-color 0.3s, color 0.3s; /* Transition pour le changement de thème */
+    transition: background-color 0.3s, color 0.3s;
   }
 
   h1, h2, h3, h4, h5 {
     font-weight: bold;
-    color: #9B773D; /* Couleur des titres */
+    color: #9B773D;
   }
 
   a {
@@ -41,7 +41,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   button {
-    background-color: #9B773D; /* Couleur du bouton */
+    background-color: #9B773D;
     color: #fffbeb;
     padding: 0.75rem 1.5rem;
     border: none;
@@ -51,24 +51,31 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   button:hover {
-    background-color: #615545; /* Couleur du bouton au survol */
+    background-color: #615545;
   }
 
   /* Styles pour le thème clair */
   .light-theme {
-    background-color: #f8f9fa; /* Couleur de fond clair */
-    color: #121112; /* Texte sombre */
+    background-color: #f8f9fa;
+    color: #121112;
   }
 
   .light-theme h1, .light-theme h2, .light-theme h3, .light-theme h4, .light-theme h5 {
-    color: #444243; /* Couleur des titres dans le thème clair */
+    color: #444243;
   }
 
   .light-theme button {
-    background-color: #444243; /* Couleur du bouton dans le thème clair */
+    background-color: #444243; 
   }
 
   .light-theme button:hover {
-    background-color: #9B773D; /* Couleur du bouton au survol dans le thème clair */
+    background-color: #9B773D; 
+  }
+
+    /* Responsive typography */
+    @media (max-width: 768px) {
+    body {
+      font-size: 14px;
+    }
   }
 `;

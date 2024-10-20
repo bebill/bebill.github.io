@@ -9,6 +9,14 @@ const AboutWrapper = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 768px) {
+    padding: 3rem 1.5rem;
+  }
+
+  @media (max-width: 480px) {
+    padding: 2rem 1rem;
+  }
 `;
 
 const AboutContent = styled.div`
@@ -16,18 +24,34 @@ const AboutContent = styled.div`
   flex-direction: column;
   max-width: 800px;
   text-align: center;
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
 `;
 
 const AboutTitle = styled.h2`
   font-size: 3rem;
   color: #9b773d;
   margin-bottom: 2rem;
+
+  @media (max-width: 768px) {
+    font-size: 2.5rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 2rem;
+  }
 `;
 
 const Note = styled.p`
   font-style: italic;
   color: #646263;
   margin-bottom: 1rem;
+
+  @media (max-width: 480px) {
+    font-size: 0.9rem;
+  }
 `;
 
 const AboutText = styled.p`
@@ -35,6 +59,16 @@ const AboutText = styled.p`
   line-height: 1.8;
   color: #646263;
   text-align: justify;
+
+  @media (max-width: 768px) {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
 `;
 
 const AboutImage = styled.img`
@@ -42,10 +76,24 @@ const AboutImage = styled.img`
   height: 150px;
   border-radius: 50%;
   margin: 2rem auto;
+
+  @media (max-width: 768px) {
+    width: 120px;
+    height: 120px;
+  }
+
+  @media (max-width: 480px) {
+    width: 100px;
+    height: 100px;
+  }
 `;
 
 const SocialLinks = styled.div`
   margin-bottom: 1rem;
+
+  @media (max-width: 480px) {
+    margin-bottom: 0.5rem;
+  }
 `;
 
 const SocialLink = styled.a`
@@ -56,6 +104,10 @@ const SocialLink = styled.a`
 
   &:hover {
     color: #9b773d;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1.2rem;
   }
 `;
 
@@ -70,6 +122,16 @@ const CTAButton = styled.button`
 
   &:hover {
     background-color: #7b622c;
+  }
+
+  @media (max-width: 768px) {
+    padding: 0.6rem 1.5rem;
+    font-size: 1.3rem;
+  }
+
+  @media (max-width: 480px) {
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
   }
 `;
 

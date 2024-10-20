@@ -6,18 +6,38 @@ import Background from "./Background";
 const ContactWrapper = styled.section`
   padding: 4rem 2rem;
   text-align: center;
+
+  @media (max-width: 768px) {
+    padding: 3rem 1.5rem;
+  }
+
+  @media (max-width: 480px) {
+    padding: 2rem 1rem;
+  }
 `;
 
 const ContactTitle = styled.h2`
   font-size: 3rem;
   color: #9b773d;
   margin-bottom: 2rem;
+
+  @media (max-width: 768px) {
+    font-size: 2.5rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 2rem;
+  }
 `;
 
 const Note = styled.p`
   font-style: italic;
   color: #646263;
   margin-bottom: 1.5rem;
+
+  @media (max-width: 480px) {
+    font-size: 0.9rem;
+  }
 `;
 
 const ContactForm = styled.form`
@@ -25,6 +45,10 @@ const ContactForm = styled.form`
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
 `;
 
 const Input = styled.input`
@@ -35,6 +59,16 @@ const Input = styled.input`
   font-size: 1rem;
   background-color: #444243;
   color: #fffbeb;
+
+  @media (max-width: 768px) {
+    padding: 0.8rem;
+    font-size: 0.95rem;
+  }
+
+  @media (max-width: 480px) {
+    padding: 0.75rem;
+    font-size: 0.9rem;
+  }
 `;
 
 const Textarea = styled.textarea`
@@ -46,6 +80,16 @@ const Textarea = styled.textarea`
   resize: vertical;
   background-color: #444243;
   color: #fffbeb;
+
+  @media (max-width: 768px) {
+    padding: 0.8rem;
+    font-size: 0.95rem;
+  }
+
+  @media (max-width: 480px) {
+    padding: 0.75rem;
+    font-size: 0.9rem;
+  }
 `;
 
 const SubmitButton = styled.button`
@@ -58,6 +102,16 @@ const SubmitButton = styled.button`
 
   &:hover {
     background-color: #7b622c;
+  }
+
+  @media (max-width: 768px) {
+    padding: 0.8rem 1.5rem;
+    font-size: 1.1rem;
+  }
+
+  @media (max-width: 480px) {
+    padding: 0.75rem 1.2rem;
+    font-size: 1rem;
   }
 `;
 

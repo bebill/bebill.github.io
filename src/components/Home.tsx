@@ -13,6 +13,18 @@ const HomeWrapper = styled.section`
   text-align: center;
   background-size: cover;
   color: #fffbeb;
+
+  @media (min-width: 1600px) {
+    padding: 0 10rem;
+  }
+
+  @media (max-width: 1024px) {
+    padding: 0 2rem;
+  }
+
+  @media (max-width: 768px) {
+    padding: 0 1rem;
+  }
 `;
 
 const Name = styled.h1`
@@ -20,6 +32,16 @@ const Name = styled.h1`
   letter-spacing: 0.5rem;
   animation: fadeIn 3s ease;
   color: #9b773d;
+
+  @media (max-width: 1024px) {
+    font-size: 3rem;
+    letter-spacing: 0.3rem;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 2.5rem;
+    letter-spacing: 0.2rem;
+  }
 `;
 
 const Title = styled.h2`
@@ -27,6 +49,14 @@ const Title = styled.h2`
   margin-top: 0.5rem;
   animation: fadeIn 3s ease;
   color: #655545;
+
+  @media (max-width: 1024px) {
+    font-size: 2rem;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+  }
 `;
 
 const Subtitle = styled.h3`
@@ -36,6 +66,14 @@ const Subtitle = styled.h3`
   color: #646263;
   font-weight: normal;
   font-style: italic;
+
+  @media (max-width: 1024px) {
+    font-size: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 0.9rem;
+  }
 `;
 
 const CTAButton = styled.button`
@@ -50,10 +88,19 @@ const CTAButton = styled.button`
   &:hover {
     background-color: #7b622c;
   }
+
+  @media (max-width: 768px) {
+    font-size: 1.2rem;
+    padding: 0.6rem 1.8rem;
+  }
 `;
 
 const SocialLinks = styled.div`
   margin-top: 2rem;
+
+  @media (max-width: 768px) {
+    margin-top: 1rem;
+  }
 `;
 
 const SocialLink = styled.a`
@@ -64,6 +111,10 @@ const SocialLink = styled.a`
 
   &:hover {
     color: #9b773d;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 1.2rem;
   }
 `;
 
